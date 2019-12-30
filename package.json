@@ -4,7 +4,9 @@
   "description": "Generic Parse API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/jest/bin/jest.js",
+    "local": "./node_modules/nodemon/bin/nodemon.js -r dotenv/config start.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,10 @@
     "parse-server": "^3.9.0"
   },
   "devDependencies": {
-    "jest": "^24.9.0"
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2"
   }
 }
