@@ -1,0 +1,6 @@
+# webstorm settings
+.idea
+node_modules
+.env
+
+
