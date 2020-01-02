@@ -19,7 +19,7 @@ const dashboard = new ParseDashboard({
         }
     ],
     "useEncryptedPasswords": true
-});
+},{ allowInsecureHTTP: true });
 
 const api = new ParseServer({
     databaseURI: process.env.PARSE_MONGO_URL,
