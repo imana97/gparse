@@ -32,10 +32,10 @@ const api = new ParseServer({
 
 const app = express();
 
-// Serve the Parse API on the /parse URL prefix
 app.use('/api', api);
 app.use('/dash', dashboard);
 
+app.use(express.static(__dirname+'/public'));
 
 app.listen(process.env.PORT, function () {
     console.log('parse-server-example running on port ' + process.env.PORT);
