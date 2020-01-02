@@ -26,7 +26,8 @@ const api = new ParseServer({
     appId: process.env.PARSE_APP_ID,
     masterKey: process.env.PARSE_MASTER_KEY,
     fileKey: process.env.PARSE_FILE_KEY,
-    serverURL: process.env.PARSE_SERVER_URL
+    serverURL: process.env.PARSE_SERVER_URL,
+    cloud: __dirname + '/cloud/main.js'
 });
 
 const app = express();
